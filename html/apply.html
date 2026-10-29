@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d13">
+  <title>Membership Application | ULF</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="../index.html" class="logo">
+      <img src="https://raw.githubusercontent.com/Carrew/Tyneceploh/refs/heads/main/1790247402920.jpg" alt="ULF Logo">
+      <span>UNION OF<br>LIBERIAN FOOTBALLERS</span>
+    </a>
+
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#membership">Membership</a>
+      <a href="news.html">News</a>
+    </nav>
+
+    <a href="../index.html" class="header-apply">BACK TO HOME ↗</a>
+  </header>
+
+  <main>
+
+    <section class="apply-hero">
+      <p class="eyebrow">ULF / MEMBERSHIP</p>
+      <h1>YOUR GAME.<br><span>YOUR VOICE.</span></h1>
+      <p>
+        Take the first step toward becoming part of a union
+        committed to the interests and welfare of Liberian football.
+      </p>
+    </section>
+
+    <section class="application-section">
+
+      <div class="application-intro">
+        <span class="section-label">MEMBERSHIP APPLICATION / 01</span>
+        <h2>APPLICATION FORM</h2>
+        <p>
+          Complete the information below. Applications are subject
+          to review under the ULF Constitution.
+        </p>
+
+        <div class="application-note">
+          <strong>BEFORE YOU APPLY</strong>
+          <p>
+            Membership categories and eligibility are governed by
+            the ULF Constitution. Submission does not guarantee
+            acceptance or approval.
+          </p>
+        </div>
+      </div>
+
+      <form id="applicationForm">
+
+        <div class="form-heading">
+          <span>01</span>
+          <h3>PERSONAL INFORMATION</h3>
+        </div>
+
+        <div class="form-grid">
+          <label>
+            Full Name *
+            <input type="text" name="fullName" required placeholder="Enter your full name">
+          </label>
+
+          <label>
+            Date of Birth
+            <input type="date" name="dateOfBirth">
+          </label>
+
+          <label>
+            Email Address
+            <input type="email" name="email" placeholder="Your email address">
+          </label>
+
+          <label>
+            Phone Number *
+            <input type="tel" name="phone" required placeholder="Enter phone number">
+          </label>
+
+          <label class="full-width">
+            Current City / County
+            <input type="text" name="location" placeholder="e.g. Monrovia, Montserrado">
+          </label>
+        </div>
+
+        <div class="form-heading">
+          <span>02</span>
+          <h3>MEMBERSHIP DETAILS</h3>
+        </div>
+
+        <div class="form-grid">
+          <label class="full-width">
+            Membership Category *
+            <select name="membershipCategory" required>
+              <option value="">Select membership category</option>
+              <option value="Full Member">Full Member</option>
+              <option value="Associate Member">Associate Member</option>
+              <option value="Honorary Member">Honorary Member</option>
+            </select>
+          </label>
+
+          <label class="full-width">
+            Your Football Background *
+            <select name="footballRole" required>
+              <option value="">Select your role</option>
+              <option value="Active Player">Active Player</option>
+              <option value="Retired Player">Retired Player</option>
+              <option value="Coach">Coach</option>
+              <option value="Football Administrator">Football Administrator</option>
+              <option value="Supporter">Supporter</option>
+              <option value="Football Benefactor">Football Benefactor</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+          <label>
+            Club / Team / Organization
+            <input type="text" name="club" placeholder="Name of club or organization">
+          </label>
+
+          <label>
+            Years Involved in Football
+            <input type="number" name="yearsInFootball" min="0" placeholder="Number of years">
+          </label>
+
+          <label class="full-width">
+            Briefly describe your football background
+            <textarea name="background" rows="4" placeholder="Tell us about your experience in Liberian football..."></textarea>
+          </label>
+        </div>
+
+        <div class="form-heading">
+          <span>03</span>
+          <h3>DECLARATION</h3>
+        </div>
+
+        <label class="declaration">
+          <input type="checkbox" name="declaration" required>
+          <span>
+            I confirm that the information provided is accurate
+            to the best of my knowledge and understand that this
+            application is subject to review under the ULF Constitution.
+          </span>
+        </label>
+
+        <p class="form-disclaimer">
+          DEMONSTRATION ONLY: This prototype stores applications
+          on the current device. It does not transmit information
+          to ULF or constitute an official membership application.
+        </p>
+
+        <button type="submit" class="btn btn-gold submit-application">
+          SUBMIT APPLICATION ↗
+        </button>
+
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <img src="https://raw.githubusercontent.com/Carrew/Tyneceploh/refs/heads/main/1790247402920.jpg" alt="ULF Logo">
+      <h3>UNION OF<br>LIBERIAN FOOTBALLERS</h3>
+    </div>
+    <p>UNITY. DIGNITY. WELFARE.</p>
+    <p>Demonstration website. Application process subject to ULF confirmation.</p>
+    <p>© <span id="year"></span> ULF. ALL RIGHTS RESERVED.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/application.js"></script>
+</body>
+      </html>
+      
